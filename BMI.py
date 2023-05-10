@@ -70,7 +70,7 @@ def keterangan(bmi):
         return "Hasil perhitungan menunjukkan bahwa Anda memiliki berat badan berlebih atau obesitas. Hasil ini berdasarkan angka BMI Anda lebih dari 27,0."
 
 if selected == "Home":
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>Welcome to BMI Calculator</h1>", unsafe_allow_html=True)
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>Welcome to BMI Calculator</h1>", unsafe_allow_html=True)
 
    url = "https://assets2.lottiefiles.com/packages/lf20_yczklbgc.json"
    response = requests.get(url)
@@ -78,11 +78,11 @@ if selected == "Home":
    
    st_lottie(animation)
 
-   st.write("<p style='font-family: Georgia; text_align: justify; color: white;'>Alat ini digunakan untuk mengidentifikasi apakah berat badan Anda termasuk dalam kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 18 tahun ke atas.</p>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text_align: justify; color: black;'>Alat ini digunakan untuk mengidentifikasi apakah berat badan Anda termasuk dalam kategori ideal atau tidak. Kalkulator ini dapat digunakan oleh seseorang yang berusia 18 tahun ke atas.</p>", unsafe_allow_html=True)
    
    
 if selected == "BMI Calculator":
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>BMI Calculator</h1>", unsafe_allow_html=True)
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>BMI Calculator</h1>", unsafe_allow_html=True)
    jenis_kelamin = st.radio(
     "Pilih jenis kelamin",
     ('Pria', 'Wanita'))
@@ -115,43 +115,43 @@ if selected == "BMI Calculator":
 
 #SIDEBAR MENU
 if selected == "Tentang BMI":
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>Apa Itu BMI?</h1>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>BMI atau Body Mass Index adalah indeks yang digunakan untuk mengukur proporsi antara berat badan dan tinggi badan seseorang. BMI diperoleh dari perbandingan antara berat badan dalam kilogram (kg) dengan tinggi badan dalam meter (m) yang dikuadratkan. BMI digunakan sebagai penilaian awal apakah seseorang memiliki berat badan yang sehat atau tidak.</p>"
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>Apa Itu BMI?</h1>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>BMI atau Body Mass Index adalah indeks yang digunakan untuk mengukur proporsi antara berat badan dan tinggi badan seseorang. BMI diperoleh dari perbandingan antara berat badan dalam kilogram (kg) dengan tinggi badan dalam meter (m) yang dikuadratkan. BMI digunakan sebagai penilaian awal apakah seseorang memiliki berat badan yang sehat atau tidak.</p>"
             , unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>BMI biasanya digunakan untuk menilai risiko terjadinya penyakit terkait kelebihan atau kekurangan berat badan, seperti diabetes, penyakit jantung, dan beberapa jenis kanker. Berdasarkan hasil BMI, seseorang dapat dikategorikan ke dalam kelompok berat badan yang sehat, kekurangan berat badan, kelebihan berat badan, atau obesitas.</p>"
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>BMI biasanya digunakan untuk menilai risiko terjadinya penyakit terkait kelebihan atau kekurangan berat badan, seperti diabetes, penyakit jantung, dan beberapa jenis kanker. Berdasarkan hasil BMI, seseorang dapat dikategorikan ke dalam kelompok berat badan yang sehat, kekurangan berat badan, kelebihan berat badan, atau obesitas.</p>"
             , unsafe_allow_html=True)
    
    st.write("<br></br>", unsafe_allow_html=True)
 
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>Apa yang perlu dilakukan setelah mengetahui hasil BMI?</h1>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Perlu diingat bahwa BMI tidak selalu menjadi indikator yang akurat untuk menentukan apakah seseorang memiliki berat badan yang sehat atau tidak. Terdapat faktor-faktor lain seperti komposisi tubuh dan massa otot yang perlu dipertimbangkan. BMI dapat Anda gunakan sebagai titik acuan mengenai masalah berat badan Anda. Oleh karena itu, sebaiknya Anda berkonsultasi dengan dokter atau ahli gizi untuk menentukan apakah BMI Anda sudah sehat atau masih perlu diperbaiki.</p>"
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>Apa yang perlu dilakukan setelah mengetahui hasil BMI?</h1>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Perlu diingat bahwa BMI tidak selalu menjadi indikator yang akurat untuk menentukan apakah seseorang memiliki berat badan yang sehat atau tidak. Terdapat faktor-faktor lain seperti komposisi tubuh dan massa otot yang perlu dipertimbangkan. BMI dapat Anda gunakan sebagai titik acuan mengenai masalah berat badan Anda. Oleh karena itu, sebaiknya Anda berkonsultasi dengan dokter atau ahli gizi untuk menentukan apakah BMI Anda sudah sehat atau masih perlu diperbaiki.</p>"
           , unsafe_allow_html=True)
    
 if selected == "Tips":
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>Tips Menjaga Berat Badan Ideal</h1>", unsafe_allow_html=True)
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>Tips Menjaga Berat Badan Ideal</h1>", unsafe_allow_html=True)
 
-   st.markdown("<h4 style='font-family: Georgia; color: white;'>1. Perhatikan asupan</h4>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Mulailah untuk menghindari makanan tinggi kalori, seperti soda, makanan yang banyak mengandung gula, dan juga fast food. Ubahlah kebiasaan tersebut dengan perbanyak konsumsi buah sayuran. Buah dan sayuran mengandung banyak serat, vitamin, dan mineral yang baik untuk tubuh dan membantu menjaga berat badan ideal.</p>"
+   st.markdown("<h4 style='font-family: Georgia; color: black;'>1. Perhatikan asupan</h4>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Mulailah untuk menghindari makanan tinggi kalori, seperti soda, makanan yang banyak mengandung gula, dan juga fast food. Ubahlah kebiasaan tersebut dengan perbanyak konsumsi buah sayuran. Buah dan sayuran mengandung banyak serat, vitamin, dan mineral yang baik untuk tubuh dan membantu menjaga berat badan ideal.</p>"
          , unsafe_allow_html=True)
 
-   st.markdown("<h4 style='font-family: Georgia; color: white;'>2. Olahraga </h4>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Olahraga membantu membakar kalori dan meningkatkan metabolisme tubuh. Tidak perlu berolahraga berat, jalan kaki pun sudah dapat dikatakan sebagai olahraga. </p>"
+   st.markdown("<h4 style='font-family: Georgia; color: black;'>2. Olahraga </h4>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Olahraga membantu membakar kalori dan meningkatkan metabolisme tubuh. Tidak perlu berolahraga berat, jalan kaki pun sudah dapat dikatakan sebagai olahraga. </p>"
          , unsafe_allow_html=True)
 
-   st.markdown("<h4 style='font-family: Georgia; color: white;'>3. Tidur yang cukup</h4>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Kurang tidur dapat mempengaruhi hormon yang mengatur nafsu makan dan metabolisme tubuh. Cobalah untuk tidur yang cukup, minimal 7-8 jam setiap malam.</p>", unsafe_allow_html=True)
+   st.markdown("<h4 style='font-family: Georgia; color: black;'>3. Tidur yang cukup</h4>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Kurang tidur dapat mempengaruhi hormon yang mengatur nafsu makan dan metabolisme tubuh. Cobalah untuk tidur yang cukup, minimal 7-8 jam setiap malam.</p>", unsafe_allow_html=True)
 
 
-   st.markdown("<h4 style='font-family: Georgia; color: white;'>4. Kurangi stress</h4>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Stres dapat mempengaruhi hormon yang mengatur nafsu makan dan dapat menyebabkan penumpukan lemak di perut. Cobalah untuk mengurangi stres dengan melakukan aktivitas yang menyenangkan</p>", unsafe_allow_html=True)
+   st.markdown("<h4 style='font-family: Georgia; color: black;'>4. Kurangi stress</h4>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Stres dapat mempengaruhi hormon yang mengatur nafsu makan dan dapat menyebabkan penumpukan lemak di perut. Cobalah untuk mengurangi stres dengan melakukan aktivitas yang menyenangkan</p>", unsafe_allow_html=True)
    
-   st.markdown("<h4 style='font-family: Georgia; color: white;'>5. Memenuhi kebutuhan cairan tubuh</h4>", unsafe_allow_html=True)
-   st.write("<p style='font-family: Georgia; text-align: justify;color: white;'>Minum air akan meningkatkan rasa kenyang dan membantu menjaga asupan kalori tetap terkendali, terutama jika minum satu atau dua gelas sebelum makan. Selain itu, minum air putih telah terbukti sedikit meningkatkan kalori yang dibakar sepanjang hari.</p>", unsafe_allow_html=True)
+   st.markdown("<h4 style='font-family: Georgia; color: black;'>5. Memenuhi kebutuhan cairan tubuh</h4>", unsafe_allow_html=True)
+   st.write("<p style='font-family: Georgia; text-align: justify;color: black;'>Minum air akan meningkatkan rasa kenyang dan membantu menjaga asupan kalori tetap terkendali, terutama jika minum satu atau dua gelas sebelum makan. Selain itu, minum air putih telah terbukti sedikit meningkatkan kalori yang dibakar sepanjang hari.</p>", unsafe_allow_html=True)
 
 if selected == 'Tentang Kami':
-   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: white;'>Tentang Kami</h1>", unsafe_allow_html=True)
+   st.markdown("<h1 style='font-family: Georgia; text-align: center; color: black;'>Tentang Kami</h1>", unsafe_allow_html=True)
 
-   st.write("<p style='font-family: Georgia; text-align: justify; color: white;'>Kami dari kelompok 6 kelas 1E Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Kalkulator BMI kami dirancang untuk membantu Anda menghitung berat badan ideal Anda dan memberikan saran tentang cara mencapainya. Kami memahami bahwa setiap orang memiliki kebutuhan yang berbeda, dan itulah mengapa kami menyediakan sumber daya yang dapat disesuaikan dengan kebutuhan Anda. Jangan ragu untuk menghubungi kami untuk memberi kritik dan saran. </p>"
+   st.write("<p style='font-family: Georgia; text-align: justify; color: black;'>Kami dari kelompok 6 kelas 1E Penjaminan Mutu Industri Pangan Politeknik AKA Bogor. Kalkulator BMI kami dirancang untuk membantu Anda menghitung berat badan ideal Anda dan memberikan saran tentang cara mencapainya. Kami memahami bahwa setiap orang memiliki kebutuhan yang berbeda, dan itulah mengapa kami menyediakan sumber daya yang dapat disesuaikan dengan kebutuhan Anda. Jangan ragu untuk menghubungi kami untuk memberi kritik dan saran. </p>"
           , unsafe_allow_html=True)
    font_size = "20px"
 
